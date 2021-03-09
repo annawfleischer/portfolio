@@ -346,6 +346,7 @@ p {
 }
 
 h1 {
+  margin: 0;
   font-size: 8em;
   font-weight: bold;
   color: rgb(247, 195, 195);
@@ -395,4 +396,23 @@ figcaption {
   text-align: justify;
   padding: 10px;
   background-color: white;
+}
+
+#aboutme {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#aboutme h1 {
+  font-size: 8em;
+  padding: 0;
+  margin: 0;
+}
+
+#aboutme p {
+  font-size: 2em;
+  padding: 1em;
 }
