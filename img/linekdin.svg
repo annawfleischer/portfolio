@@ -1,0 +1,35 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="28.32" height="32.04" viewBox="0 0 28.32 32.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #d5c8e3;
+        stroke: #010101;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3 {
+        stroke-width: 0.45px;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff79b;
+        stroke: #231f20;
+      }
+
+      .cls-2 {
+        stroke-width: 0.45px;
+      }
+    </style>
+  </defs>
+  <g>
+    <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" x="0.22" y="0.22" width="27.87" height="27.3" rx="3.43"/>
+    <g>
+      <path class="cls-2" d="M8.82,22.86c-.05,1.77-.51,2.21-2.49,2.27l-.76,0c-2,.06-2.45-.35-2.4-2.1l.29-12.67C3.51,8.63,4,8.17,6,8.17h.81c2,0,2.44.39,2.39,2.14Z"/>
+      <path class="cls-2" d="M26.09,23.45c.05,1.07-.25,1.36-1.49,1.47a2,2,0,0,1-2.3-1l-5.63-7.77,1.08,6.57c.29,1.72-.13,2.21-2.06,2.4l-1.83.2c-1.93.2-2.42-.2-2.47-1.94l-.3-13.43c0-1.47.37-1.77,2-1.77A3.43,3.43,0,0,1,16.38,9.7l4.15,5.06-.75-5c-.27-1.68.19-2.11,2.08-1.92L23,8c2,.2,2.45.66,2.52,2.43Z"/>
+    </g>
+    <ellipse class="cls-3" cx="6.53" cy="4.36" rx="2.92" ry="2.6"/>
+  </g>
+</svg>

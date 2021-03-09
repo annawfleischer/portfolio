@@ -1,0 +1,398 @@
+body {
+  background-color: rgb(255, 255, 239);
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-areas:
+    "header main"
+    "header footer";
+  grid-row-gap: 1fr 1fr;
+}
+
+header {
+  grid-area: header;
+}
+
+a {
+  list-style: none;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 20rem; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(231, 243, 252); /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  overflow-y: hidden;
+  padding-top: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+#pages {
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(247, 195, 195);
+  transition: 0.3s;
+}
+
+#pages:hover {
+  opacity: 1;
+  color: rgb(253, 160, 160);
+}
+#about {
+  font-size: 3.5rem;
+  color: rgb(247, 195, 195);
+  grid-area: about;
+}
+
+#about:hover {
+  opacity: 1;
+  color: rgb(253, 160, 160);
+}
+#anna {
+  margin-top: 10rem;
+  font-size: 10vw;
+  padding: 0;
+  color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgb(247, 195, 195);
+}
+
+#anna:hover {
+  opacity: 1;
+  color: rgb(253, 160, 160);
+}
+
+footer {
+  grid-area: footer;
+}
+
+#some {
+  display: flex;
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+#ig {
+  background-image: url(img/instgram.svg);
+  background-repeat: none;
+  height: 63px;
+  width: 64px;
+}
+
+/*#linking  {
+  background-image: url(img/linekdin.svg);
+  background-repeat: none;
+  height: 65px;
+  width: 65px;
+} */
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas:
+    "img"
+    "p";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  margin-left: 20rem; /* Same as the width of the sidebar */
+}
+
+#pica {
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+}
+
+#pica img {
+  margin-top: 5rem;
+  width: 40rem;
+  box-shadow: rgb(245, 196, 196) 10px 10px 10px 1px;
+}
+
+.wiggle a:hover {
+  animation: wiggle 75ms infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: translate(1rem, 0);
+  }
+  50% {
+    transform: translate(-2rem, 0);
+  }
+  100% {
+    transform: translate(2rem, 0);
+  }
+}
+
+p {
+  grid-area: p;
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1.5rem;
+  width: 50%;
+  text-align: center;
+  color: rgb(247, 195, 195);
+}
+
+#bod {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "b1 b2"
+    "b3 b4";
+}
+
+#box1 {
+  cursor: pointer;
+  margin-top: 4vw;
+  grid-area: b1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "01 ."
+    ". BA";
+}
+
+.boxed:hover {
+  color: #bc912b;
+  transition: 0.6s;
+}
+
+#one {
+  grid-area: 01;
+  font-size: 10vw;
+  text-align: left;
+  color: white;
+}
+
+#one:hover {
+  color: rgb(247, 195, 195);
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+
+.pos1 {
+  position: absolute;
+  top: 3vw;
+}
+
+#ba {
+  grid-area: BA;
+  font-size: 6vw;
+  color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgb(247, 195, 195);
+}
+
+#web {
+  grid-area: web;
+  font-size: 3vw;
+  text-align: right;
+}
+
+#box2 {
+  cursor: pointer;
+  margin-top: 4vw;
+  grid-area: b2;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "02 ."
+    ". SIC";
+}
+
+#two {
+  grid-area: 02;
+  font-size: 10vw;
+  color: white;
+}
+
+#two:hover {
+  transform: scale(1.1);
+  color: rgb(231, 243, 252);
+  transition: 0.6s;
+}
+
+.pos2 {
+  position: absolute;
+  top: 3vw;
+}
+
+#sic {
+  grid-area: SIC;
+  font-size: 6vw;
+  color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgb(231, 243, 252);
+}
+
+#box3 {
+  cursor: pointer;
+  grid-area: b4;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "04 ."
+    ". SIC";
+}
+
+#four {
+  grid-area: 04;
+  font-size: 10vw;
+  text-align: left;
+  color: white;
+}
+
+#four:hover {
+  color: rgb(247, 195, 195);
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+
+.pos4 {
+  position: absolute;
+  top: 25vw;
+}
+
+#sic2 {
+  grid-area: SIC;
+  font-size: 5.5vw;
+  color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgb(247, 195, 195);
+  text-align: end;
+}
+
+#box4 {
+  cursor: pointer;
+  grid-area: b3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "03 ."
+    ". ba2";
+}
+
+#three {
+  grid-area: 03;
+  font-size: 10vw;
+  text-align: left;
+  color: white;
+}
+
+#three:hover {
+  color: rgb(231, 243, 252);
+  transition: 0.6s;
+  transform: scale(1.1);
+}
+
+.pos3 {
+  position: absolute;
+  top: 25vw;
+}
+
+#ba2 {
+  grid-area: BA2;
+  font-size: 6vw;
+  color: transparent;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: rgb(231, 243, 252);
+  text-align: end;
+}
+
+#ani {
+  grid-area: ani;
+  font-size: 3vw;
+  text-align: right;
+}
+
+.gray {
+  background: rgb(231, 243, 252);
+}
+
+.white {
+  background: rgb(247, 195, 195);
+}
+
+.gold {
+  background: #bc912b;
+}
+
+.boxed {
+  margin: 0.5vw;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  font-size: 8em;
+  font-weight: bold;
+  color: rgb(247, 195, 195);
+}
+
+#art {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#gallery {
+  padding: 5px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gallery img {
+  width: 20em;
+  height: auto;
+  border: solid white 10px;
+  display: flex;
+}
+
+#videos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+}
+
+#videos iframe {
+  padding: 1rem;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  color: rgb(245, 196, 196);
+  display: flex;
+  width: 50%;
+  text-align: justify;
+  padding: 10px;
+  background-color: white;
+}
