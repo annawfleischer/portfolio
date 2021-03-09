@@ -413,6 +413,7 @@ figcaption {
 }
 
 #aboutme p {
-  font-size: 2em;
-  padding: 1em;
+  width: 40%;
+  font-size: 1.5em;
+  padding: 2em;
 }
